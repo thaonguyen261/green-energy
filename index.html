@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="ACoffee shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <!-- Font and icon -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mmenu.css">
+
+
+        <title>Energy Solution</title>
+       
+    </head>
+
+    <body>
+        <div id="page">
+
+            <!-- Navigation - mobile -->
+            <div class="navigation">
+                <div id="header">
+                    <a class="logo" href="index.html">
+                        <img class="logo" src="img/Logo.png" alt="acoffee-logo">
+                    </a>
+                    <a class="menu-icon" href="#menu"><span class="material-icons md-36 md-dark">
+                        menu
+                        </span></a>
+                    <nav id="menu">
+                        <ul>
+                            <li class="Selected">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="nav-desktop">
+
+                <div class="nav-items">
+
+                    <a class="logo" href="index.html">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                    </a>
+
+                    <div class="nav-categories">
+                    <ul>
+                        <li class="Selected">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- End navigation -->
+            <!-- Masthead -->
+            <section class="masthead">
+                <picture>
+                    <source media="(min-width:48em)" srcset="img/banner.jpg">
+                <img src="img/masthead.jpg" alt="masthead img">
+                </picture>
+                <div class="mh-content">
+                    <h1>Affordable renewable energy</h1>
+                    <p>Protect your environment and your money</p>
+                </div>
+            </section>
+
+    <!-- End masthead -->
+    <!-- Main content -->
+    <div class="wrapper">
+    <main>
+        
+        <div class="controls">
+            
+                <button id="active-button">Hydro</button>
+                <button>Wind</button>
+                <button>Solar</button>
+            </ul>
+        </div>
+        <div class="dynamic-content">
+            
+        </div>
+    </main>
+     <!-- End main content -->
+
+    <!-- Footer -->
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <div class="main-footer">
+            <div class="footer-head">
+                 <h3>Reach us at</h3>
+            </div>
+
+            <div class="footer-info">
+                <div class="social-media">
+                    <div class="icon">
+                    <img src="img/facebook.png" class="social-icon" alt="facebook">
+                    <img src="img/insta.png" class="social-icon" alt="insta">
+                </div>
+            </div>
+             </div>
+
+        <div class="copyright">
+             <p>All Rights Reserved. © Copyright 2022</p>
+            </div>
+        </div>
+   
+    </footer>
+
+    
+
+    <!-- Script -->
+    <script src="./js/index.js"></script>
+    <script src="js/mmenu.js"></script>
+        <script>
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    new Mmenu( "#menu", {
+                       "extensions": [
+                          "position-right",
+                          "theme-light"  
+                       ]
+                       
+                    });
+                }
+            );
+        </script>
+</body>
+</html>
